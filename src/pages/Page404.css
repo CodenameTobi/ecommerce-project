@@ -1,0 +1,16 @@
+.page404-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.page404-container>p {
+    font-size: 24px;
+    padding: 20px;
+    background-color: rgba(9, 95, 9, 0.236);
+    border-radius: 10px;
+}
