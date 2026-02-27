@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { Link } from "react-router"
 import Header from "../components/Header"
 
 import "./TrackingPage.css"
@@ -6,6 +6,7 @@ import "./TrackingPage.css"
 export function TrackingPage() {
     return (
         <>
+            <link rel="icon" type="image/svg+xml" href="tracking-favicon.png" />
             <title>Track Orders</title>
 
             <Header />
