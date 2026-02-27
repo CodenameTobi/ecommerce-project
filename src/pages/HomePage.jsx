@@ -1,9 +1,11 @@
-import "./HomePage.css";
-import "./header.css";
+import "./HomePage.css"
+import "./header.css"
 
 function HomePage() {
     return (
         <>
+            <title>ECommerce Project</title>
+
             <div className="header">
                 <div className="left-section">
                     <a href="index.html" className="header-link">
@@ -157,4 +159,4 @@ function HomePage() {
     )
 }
 
-export default HomePage;
+export default HomePage
