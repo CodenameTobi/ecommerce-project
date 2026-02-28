@@ -4,13 +4,13 @@ import BuyAgain from "../assets/images/icons/buy-again.png"
 
 import "./OrderPage.css"
 
-export function OrderPage() {
+export function OrderPage({ cart }) {
     return (
         <>
             <link rel="icon" type="image/svg+xml" href="orders-favicon.png" />
             <title>Orders</title>
 
-            <Header />
+            <Header cart={cart} />
 
             <div className="orders-page">
                 <div className="page-title">Your Orders</div>
