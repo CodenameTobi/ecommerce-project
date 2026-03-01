@@ -33,7 +33,11 @@ export function Product({ product, loadCart }) {
             <div className="product-name limit-text-to-2-lines">{product.name}</div>
 
             <div className="product-rating-container">
-                <img className="product-rating-stars" src={`images/ratings/rating-${product.rating.stars * 10}.png`} data-testid="product-rating-stars-image" />
+                <img
+                    className="product-rating-stars"
+                    src={`images/ratings/rating-${product.rating.stars * 10}.png`}
+                    data-testid="product-rating-stars-image"
+                />
                 <div className="product-rating-count link-primary">{product.rating.count}</div>
             </div>
 
@@ -61,7 +65,7 @@ export function Product({ product, loadCart }) {
                 Added
             </div>
 
-            <button className="add-to-cart-button button-primary" onClick={addToCart}>
+            <button className="add-to-cart-button button-primary" onClick={addToCart} data-testid="add-to-cart-button">
                 Add to Cart
             </button>
         </div>
