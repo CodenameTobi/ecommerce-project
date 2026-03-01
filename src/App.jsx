@@ -10,6 +10,8 @@ import "./App.css"
 import { Page404 } from "./pages/errors/Page404"
 
 function App() {
+    // run "axios.post('/api/reset')" in the console to reset backend's default values.
+    window.axios = axios
     const [cart, setCart] = useState([])
 
     const loadCart = async () => {
@@ -25,7 +27,7 @@ function App() {
         <Routes>
             <Route index element={<HomePage cart={cart} loadCart={loadCart} />} />
             <Route path="/checkout" element={<CheckoutPage cart={cart} loadCart={loadCart} />} />
-            <Route path="/orders" element={<OrderPage cart={cart} />} />
+            <Route path="/orders" element={<OrderPage cart={cart} loadCart={loadCart} />} />
             <Route path="/tracking/:orderId/:productId" element={<TrackingPage cart={cart} />} />
             <Route path="*" element={<Page404 cart={cart} />} />
         </Routes>
